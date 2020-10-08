@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script defer src="./index.js"></script>
+        <style>
+            body { font-family: sans-serif;color:#333;}
+            #container { width:400px;margin:auto;}
+            h1 { font-size:5em;}
+            h2 { font-size:2em;}
+            input[type=button] {
+                border: none;
+                color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h2>Privado Timer</h2>
+            <input type="text" id="minutes" value="1">
+            <h1 id="time">0:00</h1>
+            <input onclick="startCountdown()" type="button" value="Start" id="timerBtn" button></input>
+        </div>
+    </body>
+</html>
